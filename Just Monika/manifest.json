@@ -1,0 +1,18 @@
+{
+    "name": "Just Monika",
+    "version": "1.0",
+    "description": "Just Monika.",
+    "manifest_version": 3,
+    "icons": {
+      "16": "assets/images/justmonika16.png",
+      "32": "assets/images/justmonika32.png",
+      "64": "assets/images/justmonika64.png",
+      "128": "assets/images/justmonika128.png"
+    }, 
+
+    "content_scripts": [{
+        "matches": ["<all_urls>"],
+        "all_frames": true,
+        "js":      ["assets/js/contentScript.js"]
+    }]
+  }
